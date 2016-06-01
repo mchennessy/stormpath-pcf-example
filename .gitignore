@@ -1,4 +1,3 @@
-manifest.yml
 target/*
 .settings/*
 .classpath
