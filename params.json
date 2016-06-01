@@ -1,0 +1,6 @@
+{
+  "name": "Stormpath PCF Exmpale",
+  "tagline": "",
+  "body": "This example shows Stormpath not working correctly when deployed to Pivotal Web Services.  Hopefully there is a way around this that I just don't see or a fix coming soon.\r\n\r\n### Pre-requisites\r\nThis assumes you have a Stormpath account and a Pivotal Web Services account.\r\nAfter you clone this repository, you will need to modify the manifest.yml to include your Stormpath account variables.\r\n\r\n#### Deploying to PWS\r\n##### login to cloud foundry\r\ncf login \r\n\r\n##### build the project\r\nmvn clean package\r\n\r\n##### deploy to PWS\r\ncf push",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
