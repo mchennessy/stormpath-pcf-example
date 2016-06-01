@@ -1,0 +1,6 @@
+manifest.yml
+target/*
+.settings/*
+.classpath
+.project
+.mvn/*

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="banner">
+    <!--/* displayed if account IS NOT null, indicating that the user IS logged in */-->
+     <div th:if="${account}">
+         <span th:inline="text">Hello, [[${account.fullName}]]!</span>
+         <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
+     </div>
+
+     <!--/* displayed if account IS null, indicating that the user IS NOT logged in */-->
+     <div th:unless="${account}">
+         <h1>Who are you?</h1>
+         <a href="/details" class="btn btn-danger">Login</a>
+     </div>
+</div>
+<p>Nothing to see here, move along.</p>
+</body>
+</html>
